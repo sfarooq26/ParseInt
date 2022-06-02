@@ -17,24 +17,21 @@ function add() {
     calcLog ('+',currentResult, enteredNumber);
 }
 function subtract() {
-    const EnteredNumber = UserInputNumber();
-    let calcDescription = `${currentResult} - ${EnteredNumber}`
-    currentResult = currentResult -  EnteredNumber ;
-    outputResult(currentResult, calcDescription);
+    const enteredNumber = UserInputNumber();
+    currentResult = currentResult -  enteredNumber ;
+    calcLog ('-',currentResult, enteredNumber);
 }
 
 function multiply() {
-    const EnteredNumber = UserInputNumber();
-    let calcDescription = `${currentResult} * ${EnteredNumber}`
-    currentResult = currentResult *  EnteredNumber ;
-    outputResult(currentResult, calcDescription);
+    const enteredNumber = UserInputNumber();
+    currentResult = currentResult *  enteredNumber ;
+    calcLog ('*',currentResult, enteredNumber);
 }
 
 function Division() {
-    const EnteredNumber = UserInputNumber();
-    let calcDescription = `${currentResult} / ${EnteredNumber}`
-    currentResult = currentResult /  EnteredNumber ;
-    outputResult(currentResult, calcDescription);
+    const enteredNumber = UserInputNumber();
+    currentResult = currentResult /  enteredNumber ;
+    calcLog ('/',currentResult, enteredNumber);
 }
 addBtn.addEventListener('click', add );
 
