@@ -8,24 +8,27 @@ function UserInputNumber() {
 }
 
 function calcLog(operator, resultBeforeCalc, inputNumber) {
-    const calcDescription = `${currentResult} ${operator} ${inputNumber}`;
+    const calcDescription = `${resultBeforeCalc} ${operator} ${inputNumber}`;
     outputResult(currentResult, calcDescription);
 }
 function add() {
     const enteredNumber = UserInputNumber();
+    const initialResult = currentResult;
     currentResult = currentResult + enteredNumber ;
-    calcLog ('+',currentResult, enteredNumber);
+    calcLog ('+',initialResult, enteredNumber);
 }
 function subtract() {
     const enteredNumber = UserInputNumber();
+    const initialResult = currentResult;
     currentResult = currentResult -  enteredNumber ;
-    calcLog ('-',currentResult, enteredNumber);
+    calcLog ('-',initialResult, enteredNumber);
 }
 
 function multiply() {
     const enteredNumber = UserInputNumber();
+    const initialResult = currentResult;
     currentResult = currentResult *  enteredNumber ;
-    calcLog ('*',currentResult, enteredNumber);
+    calcLog ('*',initialResult, enteredNumber);
 }
 
 function Division() {
