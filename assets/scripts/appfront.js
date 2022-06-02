@@ -8,7 +8,7 @@ function UserInputNumber() {
 }
 
 function calcLog(operator, resultBeforeCalc, inputNumber) {
-    const calcDescription = `${currentResult} S{operator} ${inputNumber}`;
+    const calcDescription = `${currentResult} ${operator} ${inputNumber}`;
     outputResult(currentResult, calcDescription);
 }
 function add() {
