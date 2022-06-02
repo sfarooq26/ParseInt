@@ -6,7 +6,8 @@ let currentResult = defaultResult;
 function UserInputNumber() {
     return parseInt(userInput.value);
 }
-
+/* Can also use ++, --,
+if want to increment/decriment by 1 */
 function calcLog(operator, resultBeforeCalc, inputNumber) {
     const calcDescription = `${resultBeforeCalc} ${operator} ${inputNumber}`;
     outputResult(currentResult, calcDescription);
@@ -14,7 +15,7 @@ function calcLog(operator, resultBeforeCalc, inputNumber) {
 function add() {
     const enteredNumber = UserInputNumber();
     const initialResult = currentResult;
-    currentResult += enteredNumber ;
+    currentResult += enteredNumber ;    //simplified operator
     calcLog ('+',initialResult, enteredNumber);
 }
 function subtract() {
