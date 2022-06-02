@@ -7,11 +7,14 @@ function UserInputNumber() {
     return parseInt(userInput.value);
 }
 
+function calcLog(operator, resultBeforeCalc, inputNumber) {
+    const calcDescription = `${currentResult} S{operator} ${inputNumber}`;
+    outputResult(currentResult, calcDescription);
+}
 function add() {
     const enteredNumber = UserInputNumber();
-    const calcDescription = `${currentResult} + ${enteredNumber}`;
     currentResult = currentResult + enteredNumber ;
-    outputResult(currentResult, calcDescription);
+    calcLog ('+',currentResult, enteredNumber);
 }
 function subtract() {
     const EnteredNumber = UserInputNumber();
