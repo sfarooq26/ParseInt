@@ -14,26 +14,26 @@ function calcLog(operator, resultBeforeCalc, inputNumber) {
 function add() {
     const enteredNumber = UserInputNumber();
     const initialResult = currentResult;
-    currentResult = currentResult + enteredNumber ;
+    currentResult += enteredNumber ;
     calcLog ('+',initialResult, enteredNumber);
 }
 function subtract() {
     const enteredNumber = UserInputNumber();
     const initialResult = currentResult;
-    currentResult = currentResult -  enteredNumber ;
+    currentResult -=  enteredNumber ;
     calcLog ('-',initialResult, enteredNumber);
 }
 
 function multiply() {
     const enteredNumber = UserInputNumber();
     const initialResult = currentResult;
-    currentResult = currentResult *  enteredNumber ;
+    currentResult *=  enteredNumber ;
     calcLog ('*',initialResult, enteredNumber);
 }
 
 function Division() {
     const enteredNumber = UserInputNumber();
-    currentResult = currentResult /  enteredNumber ;
+    currentResult /=  enteredNumber ;
     calcLog ('/',currentResult, enteredNumber);
 }
 addBtn.addEventListener('click', add );
